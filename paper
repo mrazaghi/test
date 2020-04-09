@@ -1,0 +1,51 @@
+\documentclass{cta-author}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+\newtheorem{theorem}{Theorem}{}
+\newtheorem{corollary}{Corollary}{}
+\newtheorem{remark}{Remark}{}
+\usepackage{subfig}
+\usepackage{soul}
+\begin{document}
+
+\supertitle{Submission Template for IET Research Journal Papers}
+
+\title{Silicon microring resonator modulator based on PIN junction: performance optimization}
+
+\author{\au{Niloofar Mohamadi$^{1}$}, \au{Mohammad Razaghi$^{1\corr}$}, \au{Omid Jafari$^{2}$}}
+
+\address{\add{1}{Dept. of Electrical Eng., University of Kurdistan, Sanandaj, Iran}
+\add{2}{Center for Optics, Photonics and Lasers (COPL), Laval University, Canada}
+%\add{3}{Third Department, Third University, Address, Country Name}
+%\add{4}{Current affiliation: Fourth Department, Fourth University, Address, Country Name}
+\email{m.razaghi@uok.ac.ir}}
+
+\begin{abstract}
+In this paper, silicon microring modulator (SMM) based on PIN junction has been modelled and investigated. It has been shown that the proposed model results are in good agreement with experimental results. The effects of various parameters have been considered in an optimized model to decrease power consumption and increase bandwidth and extinction ratio of SMM. Power consumption parameter has been playing a key role in modulator design. To decrease this parameter, modulator dimensions have been optimized using a genetic algorithm (GA). This has been done by considering the effect of a quality factor on the gradient change of the SMM transmission profile. In comparison to experimental results, the power consumption in the presented optimized model is decreased dramatically from 9.7$\mu$W to 0.042$\mu$W. In addition, the extinction ratio and bandwidth are increased by 12.5 $\%$ and 50 $\%$, respectively.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec1}
+
+In recent years, demands for higher bandwidth of communication networks have been increased. Metal interconnection has imposed limitations on performance at high frequency. The ongoing solution to overcome these limitations is optical interconnect technology. Recently, silicon photonic has received considerable attention due to compatibility with CMOS technology and availability of fabrication technology \cite{bogaerts2012silicon}. Polymer waveguides in addition to silicon photonics technology as parts of the optical interconnection technology has been also become one of the leading technology in recent years \cite{7328675} .The optical modulator is one of the fundamental components of optical networks  that indicates the optical interconnects bandwidth. Among different types of intensity modulators, microring resonator (MRR) modulator based on PIN junction is one of the best candidates. This is because this type of micro-size modulator could provide a large range of refractive index variation and a high modulation depth  \cite{jafari2017optimization}.\\
+In pioneer work  \cite{xu2005micrometre}, a carrier injected based ring resonator modulator with bandwidth up to 5 Gbps was demonstrated. In \cite{xu200712}, pre-emphasis technique was suggested to improve modulator bandwidth. Although this technique increases the bandwidth up to 12.5 Gbps, it not only leads to increase driving voltage, but makes drive circuit more complex. In addition, recently there have been efforts to improve the functionality of modulator. The key components in the determination of modulation characteristic are bandwidth, driving voltage and power consumption. In \cite{rosenberg201225,baba201350,manipatruni2007high}, the bandwidth has been increased using different methods. Also, power consumption and driving voltage have been decreased in several researches \cite{dong2009low,manipatruni2010ultra}.\\
+Theoretical analysis of microring resonator could help to gain a better functionality perception of the resonator. In \cite{jafari2014analysis}, by using conformal transformation method, silicon ring resonator modulator based on PN junction has been analysed and simulated. A fully dynamical analysis of the modulation in ring resonator has been done in \cite{sacher2008dynamics}. Optimization of microring resonator is presented in \cite{jafari2017optimization}. Furthermore, designs for optimizing  optical modulator's performance are presented in \cite{perez2016simplified,douix2016design,milivojevic2013112gb}. Analysis of microring resonator has been studied in several researches \cite{little1997microring,yariv2000universal,liang2007coupled}.
+\\
+%In this paper both optical and electrical performances of MRR modulator are optimized. To the best of authors' knowledge for the first time by maximizing the quality factor of proposed structure, three major characteristics of modulator which are frequency response, power consumption and modulation depth are improved. In contrast in \cite{jafari2017optimization} the only parameter which is optimized is modulation depth.The optimization of Mach Zehnder Interferometer (MZI) based modulators has been done before \cite{perez2016simplified,douix2016design,milivojevic2013112gb}. But in this paper the performance of  MRR based modulator is optimized by structural modification. 
+\\      
+%Due to the impact of plasma dispersion effect on the refractive index modulation, ring resonator modulator based on PIN junction in forward bias has been considered\cite{reed2010silicon}. To simulate the modulator, a model based on the experimental results in  \cite{xu2005micrometre} is presented. This model is named as verified model in this paper. Genetic algorithm (GA) is used for optimizing the modulator's structure. In optimum voltage in which bandwidth is the highest level, the results show that power consumption in comparison with verified model decreases
+%from 9.7 $\mu$W to 0.042 $\mu$W. Moreover in optimized structure the bandwidth is increased by 50 $\%$. Furthermore, by imposing some limitations on extinction ratio in GA, the extinction ratio of optimized structure is increased by 12.5 $\%$.\\
+%This paper is organized as follow: a theoretical solution for obtaining optical parameters of ring resonator will be discussed in section 2. Next, the effect of applied voltage across PIN junction on optical performance will be studied. The results in this section are compared with experimental results in \cite{xu2005micrometre}. Then, in order to improve the characteristic of modulation, the modulator structure will be optimized using GA. Furthermore, an effective voltage will be obtained by which there is maximum bandwidth for the optimized device. Finally, the conclusion will be presented.    
+
+\begin{figure}[t!]
+\centering
+\includegraphics[width=7cm]{111.pdf}
+\caption{ Schematic of ring resonator modulator based on PIN junction.}
+\label{1}
+\end{figure}
+\bibliography{asd}
+
+
+
+\end{document}
